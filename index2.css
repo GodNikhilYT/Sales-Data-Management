@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    /* background-color: #c1bdba; */
+    background-size: cover;          /* Makes the background cover the entire page */
+    background-position: center;     /* Centers the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-image: url("2aaskjg.jpg");
+    padding-top: 61px; /* Prevents content from overlapping the fixed image */
+}
+.sect1 .banner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #e7e7e7;
+    /* box-shadow: 2px 2px 4px black; */
+    z-index: 10;
+    display: flex;
+}
+.banner-01{
+    margin-left: 30px;
+}
+.banner{
+    /* display: flex;*/
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+}
+.banner-02 ul li a{
+    text-decoration: none;
+    color:  black;
+}
+.banner-02 ul{
+    display: flex;
+}
+.banner-02{
+    float: right;
+    margin-right: 30px;
+}
+.banner-02 ul li{
+    list-style: none;
+    margin-left: 25px;
+}
+.sect1 .banner .banner-01 img{
+    height: 40px;
+    width: 90px;
+}
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+}
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: rgba(19, 35, 47, 0.9);
+    margin: 50px auto;
+    /* box-shadow: 2px 2px 4px rgba(0,0,0,0.125); */
+    background: rgba(171, 176, 180, 0.733);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #000000;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .wrapper .form{
+    width: 100%;
+  }
+  
+  .wrapper .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper .form .inputfield label{
+     width: 200px;
+     color: #000000;
+    text-shadow: 1px 1px 2px #585d67;
+     margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .wrapper .form .inputfield .input,
+  .wrapper .form .inputfield .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper .form .inputfield .textarea{
+    width: 100%;
+    height: 125px;
+    resize: none;
+  }
+  
+  .wrapper .form .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+  
+  .wrapper .form .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  .wrapper .form .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  #user-name a{
+    cursor: default;
+  }
+  
+  .wrapper .form .inputfield .input:focus,
+  .wrapper .form .inputfield .textarea:focus,
+  .wrapper .form .inputfield .custom_select select:focus{
+    border: 1px solid #19181a;
+  }
+  
+  .wrapper .form .inputfield p{
+     font-size: 14px;
+     color: #757575;
+  }
+  .wrapper .form .inputfield .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .wrapper .form .inputfield .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .wrapper .form .inputfield .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000000;
+    display: block;
+    position: relative;
+  }
+  .wrapper .form .inputfield .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #000000 #000000;
+    transform: rotate(-45deg);
+    display: none;
+  }
+  .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+    background-color: #b5cee2;
+  }
+  
+  .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+  }
+  
+  .wrapper .form .inputfield .btn{
+    width: 100%;
+     padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background-color: #b5cee2;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .wrapper .form .inputfield .btn:hover{
+    background-color: #9bbcd6;
+  }
+  
+  .wrapper .form .inputfield:last-child{
+    margin-bottom: 0;
+  }
+  
+  @media (max-width:420px) {
+    .wrapper .form .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrapper .form .inputfield label{
+      margin-bottom: 5px;
+    }
+    .wrapper .form .inputfield.terms{
+      flex-direction: row;
+    }
+  }
+  /* Desgin footer */
+.footer {
+  background-color: #baccf18f;
+  color: #ffffff;
+  padding: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 50%;
+}
+
+.footer-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000000;
+  cursor: default;
+}
+
+.footer-left p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  cursor: default;
+}
+
+.btn {
+  background-color: #b5cee2;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 4px  #7494ae;
+}
+
+.btn:hover {
+  background-color: #9bbcd6;
+}
+
+.footer-right {
+  max-width: 40%;
+}
+
+.footer-right p {
+  margin: 5px 0;
+  color: #000000;
+}
+
+.footer-right a {
+  color: #f25e47;
+  text-decoration: none;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-icons a img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+.btn a{
+  text-decoration: none;
+  color: #000000;
+}
+#agree{
+  color: #000;
+}
